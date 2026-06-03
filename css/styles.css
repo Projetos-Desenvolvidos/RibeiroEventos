@@ -221,36 +221,55 @@ button, input, select, textarea {
 .nav {
   position: fixed;
   inset: 0;
-  top: 0;
-  background: rgba(10, 10, 12, 0.98);
-  backdrop-filter: blur(20px);
+  z-index: 999;
+  background: var(--color-bg);
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   gap: 2rem;
+  padding: calc(var(--header-h) + 2rem) 1.5rem 2rem;
   opacity: 0;
   visibility: hidden;
-  transition: var(--transition);
+  pointer-events: none;
+  transition: opacity var(--transition), visibility var(--transition);
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
 }
 .nav.is-open {
   opacity: 1;
   visibility: visible;
+  pointer-events: auto;
+}
+
+.header:has(+ .nav.is-open),
+.header:has(+ .nav.is-open).header--scrolled {
+  backdrop-filter: none;
+  -webkit-backdrop-filter: none;
+  background: transparent;
+  border-bottom-color: transparent;
+  box-shadow: none;
 }
 
 .nav__list {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 1.5rem;
+  gap: 1.75rem;
+  width: 100%;
 }
 .nav__link {
-  font-size: 1.25rem;
+  font-size: 1.375rem;
   font-weight: 500;
-  color: var(--color-text-muted);
+  color: var(--color-text);
   transition: color var(--transition);
 }
 .nav__link:hover { color: var(--color-gold-light); }
+
+.nav__cta {
+  width: 100%;
+  max-width: 320px;
+}
 
 /* ---- Hero ---- */
 .hero {
@@ -1028,22 +1047,42 @@ button, input, select, textarea {
   .nav-toggle { display: none; }
 
   .nav {
-    position: static;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: auto;
+    height: var(--header-h);
     flex-direction: row;
     align-items: center;
+    justify-content: flex-end;
     gap: 2rem;
+    padding: 0 max(1rem, calc((100vw - 1200px) / 2 + 1rem));
     background: none;
     backdrop-filter: none;
     opacity: 1;
     visibility: visible;
-    inset: auto;
+    pointer-events: none;
+    overflow: visible;
+    z-index: 1000;
+  }
+
+  .nav__list,
+  .nav__cta {
+    pointer-events: auto;
   }
 
   .nav__list {
     flex-direction: row;
     gap: 2rem;
+    width: auto;
   }
-  .nav__link { font-size: 0.9375rem; }
+  .nav__link { font-size: 0.9375rem; color: var(--color-text-muted); }
+
+  .nav__cta {
+    width: auto;
+    max-width: none;
+  }
 
   .hero {
     align-items: center;

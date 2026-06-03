@@ -8,7 +8,7 @@
 
   // Configuração — atualize com dados reais do cliente
   const CONFIG = {
-    whatsapp: "5500000000000", // DDI + DDD + número (sem espaços)
+    whatsapp: "5519996012885", // DDI + DDD + número (sem espaços)
     whatsappMessage: "Olá! Gostaria de solicitar um orçamento para infraestrutura de evento.",
   };
 
@@ -154,12 +154,12 @@
   });
 
   // Atualiza links WhatsApp dinamicamente se CONFIG mudar
-  document.querySelectorAll('a[href*="wa.me/5500000000000"]').forEach((link) => {
+  document.querySelectorAll('a[href*="wa.me/5519996012885"]').forEach((link) => {
     const href = link.getAttribute("href");
-    if (href && href.includes("5500000000000")) {
+    if (href && href.includes("5519996012885")) {
       link.setAttribute(
         "href",
-        href.replace("5500000000000", CONFIG.whatsapp)
+        href.replace("5519996012885", CONFIG.whatsapp)
       );
     }
   });

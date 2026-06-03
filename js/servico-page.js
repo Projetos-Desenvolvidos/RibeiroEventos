@@ -4,7 +4,7 @@
 (function () {
   "use strict";
 
-  const WHATSAPP = "5500000000000";
+  const WHATSAPP = "5519996012885";
   const ROOT = window.location.pathname.includes("/paginas/") ? "../" : "";
 
   function assetPath(path) {
