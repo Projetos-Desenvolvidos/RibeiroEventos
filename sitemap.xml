@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url>
+    <loc>https://ribeiroeventos.com.br/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>1.0</priority>
+  </url>
+  <url><loc>https://ribeiroeventos.com.br/paginas/servico.html?s=circos</loc><priority>0.8</priority></url>
+  <url><loc>https://ribeiroeventos.com.br/paginas/servico.html?s=piramides</loc><priority>0.8</priority></url>
+  <url><loc>https://ribeiroeventos.com.br/paginas/servico.html?s=vini-galpao</loc><priority>0.8</priority></url>
+  <url><loc>https://ribeiroeventos.com.br/paginas/servico.html?s=grades</loc><priority>0.8</priority></url>
+  <url><loc>https://ribeiroeventos.com.br/paginas/servico.html?s=palcos</loc><priority>0.8</priority></url>
+  <url><loc>https://ribeiroeventos.com.br/paginas/servico.html?s=fechamentos</loc><priority>0.8</priority></url>
+  <url><loc>https://ribeiroeventos.com.br/paginas/servico.html?s=stands-octanorm</loc><priority>0.8</priority></url>
+  <url><loc>https://ribeiroeventos.com.br/paginas/servico.html?s=currais-baias</loc><priority>0.8</priority></url>
+  <url><loc>https://ribeiroeventos.com.br/paginas/servico.html?s=arquibancadas</loc><priority>0.8</priority></url>
+  <url><loc>https://ribeiroeventos.com.br/paginas/servico.html?s=climatizacao</loc><priority>0.8</priority></url>
+</urlset>
